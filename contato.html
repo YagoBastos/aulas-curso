@@ -25,32 +25,139 @@
             </nav>
   		</header>
 <!--[AQUI TEM INICIO O FORMULÁRIO]-->
-
+<form method="post" action="">
 <!--[AQUI TEM INICIO O PRIMEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-
-<!--[AQUI TEM INICIO O SEGUNDO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-				
-<!--[AQUI FINALIZA O SEGUNDO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-				 
+<fieldset>
+	<legend>Indentificação do Usuário</legend>
+	<p>
+		<label for="cnome">Nome:</label>
+		<input 
+		type="text"
+		nome="tnome"
+		id="cnome"
+		size="20"
+		maxlength="30"
+		placeholder="Nome completo"
+		>
+	</p>
+	<p>
+		<label for="csenha">Senha:</label>
+		<input 
+		type="password"
+		nome="tsenha"
+		id="csenha"
+		size="8"
+		maxlength="8"
+		placeholder="8 Digitos"
+		>
+	</p>
+	<p>
+		<label for="cemail">E-mail:</label>
+		<input 
+		type="text"
+		nome="temail"
+		id="cemail"
+		size="20"
+		maxlength="40"
+		placeholder="email@email.com.br"
+		>
+	</p>
+<fieldset id="sexo">
+	<legend>Sexo:</legend>
+	<br>
+	<input type="radio" 
+	name="tsexo" 
+	id="cmasc"
+	>
+	<label for="cmasc">Mascolino</label>
+	<br>
+	<input type="radio" 
+	name="tsexo" 
+	id="cmasc"
+	>
+	<label for="cmasc">Feminino</label>
+</fieldset>		 
 <!--[AQUI FINALIZA O PRIMEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-
+<p>
+	<label for="cmasc">Data de Nascimento:</label>
+	<input 
+	type="date"
+	nome="tnasc"
+	id="cnasc"
+	>
+</p>
+</fieldset>
 <!--[AQUI TEM INICIO O TERCEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-			
-<!--[AQUI FINALIZA O TERCEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->	
-
+<fieldset id="endereco">
+	<legend>Endereço do Usuário</legend>
+	<p>
+		<label for="crua">Logradouro:</label>
+		<input 
+		type="text"
+		nome="trua"
+		id="crua"
+		size="13"
+		maxlength="80"
+		placeholder="Endereço"
+		>
+	</p>
+	<p>
+		<label for="cnum">Numero:</label>
+		<input 
+		type="number"
+		nome="tnum"
+		id="cnum"
+		min="0"
+		max="9999"
+		>
+	</p>
+	<p>
+		<label for="cest">Estado:</label>
+		<select name="test" id="cest">
+			<optgroup label="Região Sudeste"> 
+				<option selected value="SP">São Paulo</option>
+				<option value="MG">Minas Gerais</option>
+			</optgroup>
+			<optgroup label="Região Sul"> 
+				<option value="PR">Paraná</option>
+				<option value="SC">Santa Catarina</option>
+			</optgroup>
+		</select>
+	</p>
+	<p>
+		<label for="ccid">Cidade:</label>
+		<input 
+		type="text"
+		nome="tcid"
+		id="ccid"
+		size="20"
+		maxlength="30"
+		placeholder="Sua cidade"
+		list="cidades"
+		>
+	</p>
+	<p>
+		<datalist id="cidades">
+			<option value="Campinas"></option>
+			<option value="Campinas"></option>
+			<option value="Campinas"></option>
+			<option value="Campinas"></option>
+		</datalist>
+	</p>
+</fieldset>
 <!--[AQUI TEM INICIO O QUARTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-			
+<fieldset>
 <!--[AQUI FINALIZA O QUARTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-
+</fieldset>
 <!--[AQUI TEM INICIO O QUINTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-			
+<fieldset>
 <!--[AQUI FINALIZA O QUINTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-
+</fieldset>
 <!--[AQUI INICIA O BOTÃO ENVIAR]-->
-
+<input type="submit" value="ENVIAR">
 <!--[AQUI FINALIZA O BOTÃO ENVIAR]-->	
 
-<!--[AQUI FINALIZA O FORMULÁRIO]-->
+</form><!--[AQUI FINALIZA O FORMULÁRIO]-->
 		<footer id="rodape">
 			<p>Copyright &copy; 2014 - Curso Técnico de Informática <br>
 			<a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/?lang=pt" target="_blank">Twitter</a></p> 
