@@ -139,22 +139,61 @@
 	<p>
 		<datalist id="cidades">
 			<option value="Campinas"></option>
-			<option value="Campinas"></option>
-			<option value="Campinas"></option>
-			<option value="Campinas"></option>
+			<option value="Sumaré"></option>
+			<option value="Limeira"></option>
+			<option value="Valinhos"></option>
 		</datalist>
 	</p>
 </fieldset>
 <!--[AQUI TEM INICIO O QUARTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-<fieldset>
+<fieldset id="mensagem">
+	<legend>Mensagem do Usuário</legend>
+	<p>
+		<label for="curg">Grau de Urgência: Min</label>
+		<input type="range" name="turg" id="curg" step="5" min="0" max="10">Max
+	</p>
+	<p>
+		<label for="cmsg">Mensagem:</label>
+		<textarea 
+		name="tmsg" 
+		id="cmsg" 
+		cols="45" 
+		rows="10"
+		placeholder="Deixe sua mensagem"
+		>
+		</textarea>
+	</p>
 <!--[AQUI FINALIZA O QUARTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
 </fieldset>
 <!--[AQUI TEM INICIO O QUINTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-<fieldset>
+<fieldset id="pedido">
+	<legend>Boleto Informativo</legend>
+	<p>
+		<input type="checkbox" name="tped" id="cped" checked>
+		<label for="cped">Desejo assinar o boleto Informativo</label>
+	</p>
+	<p>
+		<label for="cqtd">Quantidade de impresões:</label>
+		<input type="range" name="number" id="cqtd" min="1" max="100" value="1">
+	</p>
+	<p>
+		<label for="ccor">Selecione a cor de impressão:</label>
+		<input type="color" name="tcor" id="ccor" value="#000FFF">
+	</p>
+	<p>
+		<label for="ctot">Total R$:</label>
+		<input 
+		type="text" 
+		name="ttot" 
+		id="ctot"
+		readonly
+		placeholder="Valor Total"
+		>
+	</p>
 <!--[AQUI FINALIZA O QUINTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
 </fieldset>
 <!--[AQUI INICIA O BOTÃO ENVIAR]-->
-<input type="submit" value="ENVIAR">
+<button type="submit" id="enviar" name="tenviar">Enviar</button>
 <!--[AQUI FINALIZA O BOTÃO ENVIAR]-->	
 
 </form><!--[AQUI FINALIZA O FORMULÁRIO]-->
